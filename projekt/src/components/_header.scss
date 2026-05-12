@@ -1,0 +1,32 @@
+@import '../reuseablesass/flex';
+@import '../reuseablesass/text.scss';
+// @use '../reuseablesass/flex' as *;
+
+.headline {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    flex-direction: row-reverse;
+    gap: 4vw;
+    font-size: 3.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    @include flex-column;
+
+}
+
+.search-input {
+    height: 12vw;
+    width: 90vw;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.logo {
+    width: 4.5%;
+}

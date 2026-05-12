@@ -1,0 +1,103 @@
+@import "../../reuseablesass/flex.scss";
+
+.listitem {
+    margin-left: 2vw;
+}
+
+.button-toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.8vw;
+    border: none;
+    text-transform: uppercase;
+}
+
+.popup {
+    height: 14vw;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 0.7vw;
+    display: flex;
+    border-color: lightgrey;
+}
+
+.arrow {
+    width: 24px;
+    margin-left: auto;
+    transform: rotate(-90deg);
+}
+
+img .turn {
+    transform: rotate(90deg);
+}
+
+.context {
+    display: grid;
+    grid-template-columns: 0.3fr 0.9fr;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 0.1vw;
+    border-color: lightgrey;
+    padding: 1.5vw;
+    position: relative;
+    background-color: white;
+    transition: ease-in-out 0.1s;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.context-img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    margin: auto auto;
+    transform: scale(0.999);
+    image-rendering: optimizeQuality;
+}
+
+.context-info {
+    @include flex-center;
+    @include flex-column;
+    align-content: center;
+    margin-left: 4vw;
+}
+
+.context-headline {
+    font-size: 4.2vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.context-context {
+    font-size: 3vw;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+p {
+    margin-top: 2vw;
+    margin-bottom: 0;
+}
+
+.save-toggle {
+    background-color: #46781B;
+    position: absolute;
+    right: 3%;
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden;
+    display: flex;
+
+    &__bookmark {
+        width: 7vw;
+        height: 7vw;
+        margin: auto auto;
+    }
+}
